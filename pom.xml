@@ -55,17 +55,17 @@
         <!-- Plugins -->
         <apache.rat.plugin.version>0.13</apache.rat.plugin.version>
         <coveralls.maven.plugin.version>4.3.0</coveralls.maven.plugin.version>
-        <jacoco.maven.plugin.version>0.8.7</jacoco.maven.plugin.version>
+        <jacoco.maven.plugin.version>0.8.12</jacoco.maven.plugin.version>
         <jacoco.coverage.percentage.minimum>0.000</jacoco.coverage.percentage.minimum>
         <jacoco.classes.missed.minimum>500</jacoco.classes.missed.minimum>
         <japicmp.skip>true</japicmp.skip>
-        <java.compilation.source>11</java.compilation.source>
-        <java.compilation.target>11</java.compilation.target>
+        <java.compilation.source>17</java.compilation.source>
+        <java.compilation.target>17</java.compilation.target>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
         <maven.checkstyle.plugin.version>3.0.0</maven.checkstyle.plugin.version>
         <maven.javadoc.plugin.version>3.1.0</maven.javadoc.plugin.version>
-        <maven.pmd.plugin.version>3.11.0</maven.pmd.plugin.version>
+        <maven.pmd.plugin.version>3.21.0</maven.pmd.plugin.version>
         <maven.project-info.version>3.0.0</maven.project-info.version>
         <maven.scm.publish.plugin.version>3.0.0</maven.scm.publish.plugin.version>
         <maven.site.plugin.version>3.7.1</maven.site.plugin.version>
@@ -73,7 +73,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <site.publish.url>https://github.com/Hygieia/hygieia-core</site.publish.url>
         <site.publish.checkout.directory>site-content</site.publish.checkout.directory>
-        <spotbugs.plugin.version>3.1.11</spotbugs.plugin.version>
+        <spotbugs.plugin.version>4.8.6.6</spotbugs.plugin.version>
     </properties>
 
     <parent>
@@ -484,8 +484,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.plugin.version}</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>${java.compilation.source}</source>
+                    <target>${java.compilation.target}</target>
                 </configuration>
             </plugin>
             <plugin>
